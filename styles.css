@@ -3,7 +3,13 @@ html {
 }
 
 body {
-  background: #201e20 url(../html/assets/bg-bolinhas.png) no-repeat center top;
+  background: #201e20 url(../html/assets/bolas.png) no-repeat center top;
+  margin: 0px;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .container {
@@ -12,4 +18,188 @@ body {
   margin: 0 auto;
 }
 
+section.curriculo {
+  text-align: left;
+  font-size: 1rem;
+}
+
+section.curriculo .fotoprincipal {
+  border-radius: 50%;
+  width: 200px;
+  right: 50%;
+}
+
+> img {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+a.bt- {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  position: absolute;
+  left: 588px;
+  top: 122px;
+}
+
+a.bt- i {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 40px;
+  height: 40px;
+  background: crimson;
+  border-radius: 100%;
+  margin-right: 10px;
+}
+
+a.bt- span {
+  color: #f3dcdc;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.elementos h1 {
+  font-size: 2.7rem;
+  font-weight: normal;
+  margin: 0;
+  color: #504e4e;
+}
+
+.elementos strong {
+  color: #fff;
+}
+
+.elementos h2 {
+  margin: 0;
+  color: #8b8a8a;
+}
+
+.conhecimentos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.conhecimentos .box {
+  width: calc(33% - 2.5rem);
+}
+
+.conhecimentos .box h4 {
+  font-size: 1.6rem;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.conhecimentos .box .box-progress {
+  background: #000;
+  height: 6px;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.conhecimentos .box .box-progress .progress {
+  width: 100%;
+  height: 6px;
+}
+
+.conhecimentos .box .box-progress .progress.verde {
+  background: #008000;
+  -webkit-animation-name: verde;
+          animation-name: verde;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  width: 70%;
+}
+
+.conhecimentos .box .box-progress .progress.azul {
+  background: #2959e1;
+  -webkit-animation-name: azul;
+          animation-name: azul;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  width: 30%;
+}
+
+.conhecimentos .box .box-progress .progress.vermelho {
+  background: #d52547;
+  -webkit-animation-name: vermelho;
+          animation-name: vermelho;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  width: 20%;
+}
+
+.conhecimentos .box strong {
+  font-size: 1.2rem;
+}
+
+@-webkit-keyframes verde {
+  from {
+    width: 0;
+  }
+  to {
+    width: 70%;
+  }
+}
+
+@keyframes verde {
+  from {
+    width: 0;
+  }
+  to {
+    width: 70%;
+  }
+}
+
+@-webkit-keyframes azul {
+  from {
+    width: 0;
+  }
+  to {
+    width: 30%;
+  }
+}
+
+@keyframes azul {
+  from {
+    width: 0;
+  }
+  to {
+    width: 30%;
+  }
+}
+
+@-webkit-keyframes vermelho {
+  from {
+    width: 0;
+  }
+  to {
+    width: 20%;
+  }
+}
+
+@keyframes vermelho {
+  from {
+    width: 0;
+  }
+  to {
+    width: 20%;
+  }
+}
 /*# sourceMappingURL=styles.css.map */
