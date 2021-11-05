@@ -1,0 +1,15 @@
+html {
+  font-size: 85%;
+}
+
+body {
+  background: #201e20 url(../html/assets/bg-bolinhas.png) no-repeat center top;
+}
+
+.container {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/*# sourceMappingURL=styles.css.map */
